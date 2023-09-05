@@ -98,9 +98,9 @@ print("Contraseña guardada con éxito")
 
 numero = float(input("Ingrese el numero para saber si es primo o no: "))
 if numero <= 1:
-    print("No es primo")
+     print("No es primo")
 elif numero <= 3:
-    print("Es primo")
+     print("Es primo")
 elif numero % 2 == 0 or numero % 3 == 0:
     print("No es primo")
 else:
@@ -108,8 +108,10 @@ else:
     while i * i <= numero:
         if numero % i == 0 or numero % (i + 2) == 0:
             print("No es primo")
+            break  
         i += 6
-    print("Es primo")
+    else:
+        print("Es primo")
 
 #--------------------Ejercicio 11--------------------
 
