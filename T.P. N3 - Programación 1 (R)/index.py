@@ -73,16 +73,12 @@ for i in range(1,11):
 
 #--------------------Ejercicio 8--------------------
 
-palabra = input("Ingrese una palabra: ")
-sum=0
-for letra in palabra:
-    sum+=1
-while sum > 0:
-    letras = palabra[sum-1]
-    sum-=1
-    print(letras)
+n= int(input("Ingrese la altura del triángulo: "))
 
-
+for i in range(1, n+1, 2):
+    for j in range(i, 0, -2):
+        print(j, end= " ")
+    print("")
 
 ##--------------------Ejercicio 9--------------------
 
